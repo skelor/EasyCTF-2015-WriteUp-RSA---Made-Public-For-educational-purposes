@@ -56,10 +56,10 @@ So it's the famous public exponent (e) 65537, and again we know that the problem
 Anyway, so now we can solve the plaintext by t = c^d mod m
 
 
->>> d = 340035333160956238336074318075946961695270890880263371398510321485728225
+ d = 340035333160956238336074318075946961695270890880263371398510321485728225
 
 
->>> binascii.unhexlify(format(pow(c, d, m), 'x'))
+binascii.unhexlify(format(pow(c, d, m), 'x'))
 
 
 b'flag{l0l_l3l_k1k_k3k_;p;}'
